@@ -1,0 +1,475 @@
+html,
+body {
+    min-width: 1122px;
+    min-height: 1750px;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.main-header {
+
+    background-color: #eeeeee;
+}
+
+.container {
+    width: 880px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.main {
+    background-color: white;
+}
+
+.header-logo {
+    float: left;
+    margin-right: 183px;
+}
+
+.main-navigation {
+    float: left;
+    margin-top: 27px;
+}
+
+.user-block {
+    float: right;
+    margin-top: 27px;
+}
+
+.static-header {
+    padding-top: 27px;
+    margin-bottom: 42px;
+}
+
+.slider-content {
+    float: left;
+    width: 365px;
+    margin-top: 21px;
+    margin-bottom: 80px;
+}
+
+.slider-img {
+    float: right;
+}
+
+.main-header {
+    margin-bottom: 80px;
+}
+
+/*
+Майн, Промо блоки Веб-сайты, приложения, призентации
+ */
+
+.services-item {
+    float: left;
+    width: 240px;
+    margin-right: 80px;
+}
+
+.services object{
+    margin-bottom: 12px;
+}
+
+.services-item:last-child {
+    margin-right: 0;
+}
+
+.services {
+    margin-bottom: 80px;
+}
+
+.line-services{
+    margin-bottom: 65px;
+}
+
+/*
+Блог о нас!
+ */
+
+.aboutUs-column-left {
+    float: left;
+    width: 582px;
+}
+
+.aboutUs-column-right {
+    float: right;
+    width: 240px;
+}
+
+.aboutUs-logo-img {
+    width: 185px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aboutUs-logo  {
+    text-align: center;
+}
+
+.aboutUs {
+    margin-bottom: 53px;
+}
+
+.line-aboutUs {
+    margin-bottom: 45px;
+}
+
+/*
+Блог наши работы
+ */
+
+.works-img {
+    float: left;
+}
+
+.works-img:nth-child(1) {
+    margin-right: 120px;
+    padding-top: 20px;
+}
+
+.works-img:nth-child(2) {
+    margin-right: 123px;
+}
+
+.works {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 31px;
+}
+
+.line-works {
+    margin-bottom: 80px;
+}
+
+.contacts-item {
+    float: left;
+    width: 210px;
+    padding: 20px;
+    padding-top: 25px;
+
+
+}
+
+.contacts {
+    margin-bottom: 80px;
+}
+
+/*
+Футер
+ */
+
+.social {
+    float: left;
+    margin-right: 55px;
+}
+
+.footer-title {
+    float: left;
+}
+
+
+
+
+/*
+Декорация главной навигации
+ */
+
+.main-navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.main-navigation li {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.main-navigation a,
+.user-block a {
+    color: #000000;
+
+    text-transform: uppercase;
+    text-decoration: none;
+
+
+}
+
+
+
+
+
+/*
+Декорация Слайдера
+ */
+
+.slider-name {
+    font-size: 36px;
+    line-height: 28px;
+}
+
+.slider-content p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 25px;
+}
+
+
+/*
+Декорация кнопок
+ */
+
+.btn {
+    display: inline-block;
+    padding: 10px 71px;
+
+
+    color: #ffffff;
+    background-color: #fb565a;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: top;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: inherit;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    border-radius: 3px;
+
+}
+
+/*
+Декорация сервиса
+ */
+
+.services-name {
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.services p {
+    margin-bottom: 30px;
+    font-size: 15px;
+    line-height: 20px;
+}
+.services-item .btn {
+    padding: 10px 40px;
+}
+
+hr {
+    background-color: #eeeeee;
+    opacity: 0.3;
+}
+
+/*
+О нас aboutUs
+ */
+
+.aboutUs-title {
+    font-size: 36px;
+    line-height: 34px;
+
+}
+
+
+
+.aboutUs-column-left p {
+    margin-top: 10px;
+    padding: 0;
+    margin-bottom: 43px;
+
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.aboutUs-column-left ul,
+.aboutUs-column-right ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.aboutUs-column-left li,
+.aboutUs-column-right li {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 22px;
+}
+
+.aboutUs-column-left li::before,
+.aboutUs-column-right li::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+
+    background-color: #fb565a;
+    width: 25px;
+    height: 2px;
+}
+
+.aboutUs-column-left ul b,
+.aboutUs-column-right ul b {
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 23px;
+
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+/*
+Декорация Логотипа в блоке о нас
+ */
+
+.aboutUs-logo span {
+    font-size: 16px;
+
+    text-transform: uppercase;
+}
+
+.aboutUs-logo span::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 12px;
+
+    background-color: #eeeeee;
+
+    width: 65px;
+    height: 2px;
+}
+
+.aboutUs-logo span::after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 12px;
+
+    background-color: #eeeeee;
+
+    width: 65px;
+    height: 2px;
+}
+
+.contacts {
+
+}
+
+.map-img {
+    background: url("../img/map.jpg") no-repeat center;
+
+    width: 1199px;
+    height: 416px;
+    position: relative;
+    left: -160px;
+
+}
+
+.contacts-item {
+    position: absolute;
+    left: 160px;
+    top: 90px;
+
+    background-color: #ffffff;
+}
+
+.contacts-item p,
+.contacts-item span {
+    margin-top: 12px;
+    margin-bottom: 15px;
+
+    font-size: 16px;
+    line-height: 20px;
+    color: #666666;
+}
+
+.contacts-item b {
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 30px;
+
+}
+
+.contacts-item .btn {
+    margin-top: 23px;
+    margin-left: 2px;
+
+
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 105px;
+}
+
+
+
+
+.icon-facebook, .icon-instagramm, .icon-vk {
+    width: 62px;
+    height: 63px;
+    display: inline-block;
+    font-size: 0;
+    margin-right: 25px;
+}
+
+.icon-facebook{
+    background: url("../img/icon-facebook.png");
+}
+
+.icon-instagramm{
+    background: url("../img/icon-instagramm.png");;
+}
+
+.icon-vk{
+    background: url("../img/icon-vk.png");
+}
+
+.footer-title-name {
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.footer-title p {
+    font-size: 16px;
+    line-height: 22px;
+
+    margin: 0;
+    
+}
+
+
+.btn-app {
+    background-color: #00ca74;
+}
+
+.btn-presentation {
+    background-color: #efc84a;
+}
+
+
+
+
+
