@@ -1,7 +1,8 @@
 html,
 body {
-    min-width: 1122px;
-    min-height: 1750px;
+    overflow-x: hidden;
+
+    min-width: 880px;
     margin: 0;
     padding: 0;
 
@@ -21,8 +22,33 @@ body {
 
 .main-header {
 
-    background-color: #eeeeee;
+    background: linear-gradient(89deg, #7f3bfa, #00ca74, #d54aef);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 8s ease infinite;
+    -moz-animation: AnimationName 8s ease infinite;
+    animation: AnimationName 8s ease infinite; }
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 54%}
+    50%{background-position:100% 47%}
+    100%{background-position:0% 54%}
 }
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 54%}
+    50%{background-position:100% 47%}
+    100%{background-position:0% 54%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 54%}
+    50%{background-position:100% 47%}
+    100%{background-position:0% 54%}
+}
+
+    /*background-color: #eeeeee;*/
+
+
+
 
 .container {
     width: 880px;
@@ -141,11 +167,48 @@ body {
 .works-img:nth-child(1) {
     margin-right: 120px;
     padding-top: 20px;
+
+    opacity: 0.2;
 }
 
 .works-img:nth-child(2) {
     margin-right: 123px;
+
+    opacity: 0.2;
 }
+
+.works-img:last-child {
+    opacity: 0.2;
+}
+
+/*Декорация блока наши работы*/
+/*Наведение*/
+.works-img:nth-child(1):hover {
+    opacity: 1;
+}
+
+.works-img:nth-child(2):hover {
+    opacity: 1;
+}
+
+.works-img:last-child:hover {
+    opacity: 1;
+}
+/*Нажатие*/
+
+.works-img:nth-child(1):active {
+    opacity: 1;
+}
+
+.works-img:nth-child(2):active {
+    opacity: 1;
+}
+
+.works-img:last-child:active {
+    opacity: 1;
+}
+
+
 
 .works {
     padding-left: 10px;
@@ -174,15 +237,19 @@ body {
 Футер
  */
 
-.social {
+.share {
     float: left;
-    margin-right: 55px;
+
 }
 
 .footer-title {
-    float: left;
+    float: right;
+    margin-right: 20px;
 }
 
+.main-footer {
+    margin-bottom: 10px;
+}
 
 
 
@@ -210,6 +277,59 @@ body {
 
 
 }
+
+.main-navigation a:hover,
+.user-block a:hover {
+    color: red;
+}
+
+
+
+
+.basket {
+    display: inline-block;
+
+    padding-left: 50px;
+
+    vertical-align: top;
+
+
+    position: relative;
+}
+
+
+
+.basket::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 20px;
+
+    width: 15px;
+    height: 15px;
+
+    background-image: url("../img/spritesheet.png");
+    background-repeat: no-repeat;
+
+    background-position: -70px -70px;
+    display: block;
+
+
+
+}
+
+
+
+
+
+.basket:hover::before {
+    opacity: 1;
+}
+
+
+
+
+
 
 
 
@@ -276,6 +396,49 @@ body {
 .services-item .btn {
     padding: 10px 40px;
 }
+
+
+/*
+Декорация кнопок в блоке сервис (веб сайты, приложения, призентации)
+ */
+
+.btn-site {
+    background-color: #fb565a;
+}
+
+.btn-app {
+    background-color: #00ca74;
+}
+
+.btn-presentation {
+    background-color: #efc84a;
+}
+/*Наведение*/
+.btn-site:hover {
+    background-color: #d6494d;
+}
+
+.btn-app:hover {
+    background-color: #01a25e;
+}
+
+.btn-presentation:hover {
+    background-color: #d6ae2c;
+}
+/*Нажатие*/
+.btn-site:active {
+    background-color: #b63538;
+}
+
+.btn-app:active {
+    background-color: #009053;
+}
+
+.btn-presentation:active {
+    background-color: #c09b24;
+}
+
+
 
 hr {
     background-color: #eeeeee;
@@ -427,25 +590,49 @@ hr {
 
 
 
-.icon-facebook, .icon-instagramm, .icon-vk {
-    width: 62px;
-    height: 63px;
+.social {
+    width: 60px;
+    height: 60px;
     display: inline-block;
     font-size: 0;
     margin-right: 25px;
+
+    background: #e1e1e1 url("../img/spritesheet.png") no-repeat;
+
+    /* рисуем Круг */
+
+
+
+
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
 }
 
-.icon-facebook{
-    background: url("../img/icon-facebook.png");
+.social-fb {
+
+    background-position: -201px -52px;
+
+
 }
 
-.icon-instagramm{
-    background: url("../img/icon-instagramm.png");;
+
+.social-in{
+    background-position: -357.5px -50.5px;
 }
 
-.icon-vk{
-    background: url("../img/icon-vk.png");
+.social-vk{
+    background-position: -521px -47.5px;
 }
+
+.social:hover {
+    background-color: #fb565a;
+}
+
+.social:active {
+    background-color: #d6494d;
+}
+
 
 .footer-title-name {
     font-size: 36px;
@@ -459,17 +646,5 @@ hr {
     margin: 0;
     
 }
-
-
-.btn-app {
-    background-color: #00ca74;
-}
-
-.btn-presentation {
-    background-color: #efc84a;
-}
-
-
-
 
 
